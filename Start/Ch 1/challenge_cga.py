@@ -10,15 +10,16 @@
 # of "Ticker: Company -- $Price"
 
 class Stock:
-    def __init__(self, ticker, price, name):
-        self.ticker = ticker
-        self.price = price
-        self.name = name
+  def __init__(self, ticker, price, name):
+    self.ticker = ticker
+    self.price = price
+    self.name = name
 
-    def get_description(self):
-        description = '{0}: {1} -- ${2}'.format(self.ticker, self.name, self.price)
-        return description
-        # return f'{self.ticker}: {self.name} -- ${self.price}' TODO research what this nice way to do it is called
+  def get_description(self):
+    description = '{0}: {1} -- ${2}'.format(self.ticker, self.name, self.price)
+    return description
+    # return f'{self.ticker}: {self.name} -- ${self.price}' TODO research what this nice way to do it is called
+
 
 # ~~~~~~~~~ TEST CODE ~~~~~~~~~
 msft = Stock("MSFT", 342.0, "Microsoft Corp")
